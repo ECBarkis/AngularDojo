@@ -1,0 +1,5 @@
+<h1>Switchboard</h1>
+<div *ngFor="let switch of switchboard, let idx = index">
+  <div *ngIf="switch" class="button"><button id="on" (click)="switchIt(idx)">On</button></div>
+  <div *ngIf="!switch" class="button"><button id="off" (click)="switchIt(idx)">Off</button></div>
+</div>

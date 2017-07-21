@@ -1,0 +1,13 @@
+.button{
+	padding: 20px;
+	background-color: yellow;
+}
+div{
+	display: inline-block;
+}
+#on{
+	background-color: green;
+}
+#off{
+	background-color: red;
+}
