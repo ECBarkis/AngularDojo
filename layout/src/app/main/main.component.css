@@ -1,0 +1,12 @@
+div{
+	width: 680px;
+	height: 590px;
+	background-color: skyblue;
+	padding: 10px;
+	margin: 20px;
+	border: 2px solid black;
+	margin-left: 28px;
+}
+.content{
+	margin-left: 20px;
+}

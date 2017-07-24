@@ -1,0 +1,9 @@
+div{
+	width: 970px;
+	margin: 0px auto;
+	padding: 20px;
+}
+app-main, app-nav{
+	display: inline-block;
+	vertical-align: top;
+}
