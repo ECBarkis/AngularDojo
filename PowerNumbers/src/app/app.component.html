@@ -1,0 +1,36 @@
+<form (submit)="newPowerLevel()">
+  <fieldset>
+    <legend>PowerComponent</legend>
+    <div>
+      <label>Initial Power Level:</label>
+      <input type="number" id="powerLevel"
+        require min="1" max="100"
+        name="powerLevel" [(ngModel)]="powerLevel">
+      <input type="submit" value="Calculate Powers">
+    </div>
+    <fieldset class="powers">
+      <legend>HumanComponent</legend>
+      <app-human [ipl]="power"></app-human>
+    </fieldset>
+    <fieldset class="powers">
+      <legend>SaiyanComponent</legend>
+      <app-saiyan [ipl]="power"></app-saiyan>
+    </fieldset>
+    <fieldset class="powers">
+      <legend>SuperSaiyanComponent</legend>
+      <app-super-saiyan [ipl]="power"></app-super-saiyan>
+    </fieldset>
+    <fieldset class="powers">
+      <legend>SuperSaiyanTwoComponent</legend>
+      <app-super-saiyan-two [ipl]="power"></app-super-saiyan-two>
+    </fieldset>
+    <fieldset class="powers">
+      <legend>SuperSaiyanThreeComponent</legend>
+      <app-super-saiyan-three [ipl]="power"></app-super-saiyan-three>
+    </fieldset>
+    <fieldset class="powers">
+      <legend>SuperSaiyanFourComponent</legend>
+      <app-super-saiyan-four [ipl]="power"></app-super-saiyan-four>
+    </fieldset>
+  </fieldset>
+</form>
