@@ -1,0 +1,9 @@
+<app-new-quote
+	(getQuote)="addQuote($event)"
+></app-new-quote>
+<app-quote-list
+	[quotes]="allQuotes"
+	(voteUp)="voteUp($event)"
+	(voteDown)="voteDown($event)"
+	(destroy)="destroy($event)"
+></app-quote-list>

@@ -1,0 +1,24 @@
+<form (submit)="addQuote()">
+	<div class="form-group">
+		<h1>Add a Quote</h1>
+		<textarea 
+			name="quote"
+			required
+			minlength="4"
+			[(ngModel)]="newQuote.quote"
+			#quote="ngModel" 
+		></textarea>
+	</div>
+	<div class="form-group">
+		<label>Author</label>
+		<input
+			type="text"
+			name="author"
+			required
+			minlength="1"
+			[(ngModel)]="newQuote.author"
+			#author="ngModel"
+		>
+	</div>
+	<input type="submit" value="Add Quote">
+</form>
